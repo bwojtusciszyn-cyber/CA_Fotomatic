@@ -22,6 +22,7 @@ html {
 
 .image-container {
   overflow: hidden;
+  display: inline-flex;
 }
 
 .image-container img {
@@ -136,6 +137,7 @@ header .mobile {
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   margin:10.625rem 0 10.625rem 6.25rem;
+  margin-bottom:170px;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
@@ -172,13 +174,18 @@ header .mobile {
   color:white;
   font-size:2.825rem;
   margin-top: 2rem;
-  
   line-height: 1.4rem;
+  margin-bottom: 0.75rem;
 }
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
+  margin-bottom:2.5rem;
   padding: 1.25rem 7.25rem;
+  font-size:1.25rem;
+  font-family: Roboto;
+  line-height: 1.4;
+  border-radius:0.25rem;
 }
 
 @media only screen and (max-width: 760px) {
@@ -237,10 +244,11 @@ header .mobile {
 }
 
 .feature {
-  flex: 1;
+  display: inline-flex;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  height:635px;
 }
 
 .feature .image-container {
