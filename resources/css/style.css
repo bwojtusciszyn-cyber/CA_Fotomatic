@@ -28,6 +28,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -41,6 +42,7 @@ html {
 header {
   position: fixed;
   width: 100%;
+  z-index: 100;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
 }
@@ -54,7 +56,7 @@ header .content {
 header .logo {
   color:#4a4a4a;
   font-size:24px;
-  font-family: Roboto-mono-regular;
+  font-family: roboto;
   flex: 1;
   margin-left: 30px;
   
@@ -74,7 +76,7 @@ nav a {
   font-size: 1rem;
   color: #4a4a4a;
   font-size:16px;
-  font-family: roboto-regular;
+  font-family: roboto;
 }
 
 header .icon {
@@ -102,6 +104,8 @@ header .mobile {
 
   header .content {
     padding: .5rem 0;
+    align-items: center;
+    display: flex;
   }
 
   header .mobile ul {
@@ -239,27 +243,26 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
-  height: 635px;
   
 }
 
 .feature {
-  display: inline-flex;
-  flex-direction: row;
+
+  flex:1;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
-  height:36.25rem;
+  
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
-  margin-bottom:2.5rem ;
+
 }
 
 .feature h2 {
